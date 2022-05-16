@@ -175,3 +175,29 @@ body {
   height: 100vh;
   background: var(--clr-secondary);
 }
+
+/* Media queries */
+@media (max-width: 767.9px) {
+  .slider__navigation {
+    flex-direction: column;
+    row-gap: 1.5rem;
+  }
+
+  .slider__text {
+    order: 2;
+  }
+
+  .slider__btns {
+    order: 1;
+  }
+}
+
+@media (max-width: 690px) {
+  .image-carousel__item {
+    width: calc(100vw - 4rem);
+  }
+
+  .img {
+    width: 100%;
+  }
+}
