@@ -1,6 +1,12 @@
 :root {
   font-size: 62.5%;
   font-family: Verdana, Arial, Helvetica, sans-serif;
+
+  /* Colors */
+  --clr-main: #746c5e;
+  --clr-secondary: #f3eada;
+  --clr-contrast: #9489c5;
+  --clr-contrast-secondary: #00b798;
 }
 
 html {
