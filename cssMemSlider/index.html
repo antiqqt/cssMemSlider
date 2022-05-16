@@ -4,7 +4,74 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Meme slider</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
-  <body></body>
+  <body>
+    <div class="container">
+      <div class="slider">
+        <!-- Actual inputs -->
+        <input
+          class="slider__input"
+          type="radio"
+          name="slide"
+          id="meme-1"
+          checked
+        />
+        <input class="slider__input" type="radio" name="slide" id="meme-2" />
+        <input class="slider__input" type="radio" name="slide" id="meme-3" />
+        <input class="slider__input" type="radio" name="slide" id="meme-4" />
+
+        <div class="slider__slide">
+          <div class="image-carousel">
+            <div class="image-carousel__item" id="item-1">
+              <img class="img" alt="first meme" src="images/1.jpg" />
+            </div>
+
+            <div class="image-carousel__item" id="item-2">
+              <img class="img" alt="second meme" src="images/2.jpg" />
+            </div>
+
+            <div class="image-carousel__item" id="item-3">
+              <img class="img" alt="third meme" src="images/3.jpg" />
+            </div>
+
+            <div class="image-carousel__item" id="item-4">
+              <img class="img" alt="fourth meme" src="images/4.jpg" />
+            </div>
+          </div>
+        </div>
+
+        <div class="slider__navigation">
+          <!-- Text  -->
+          <div class="slider__text">
+            <div class="text-carousel">
+              <p class="text-carousel__item">
+                Hey, these are some memes for you.
+              </p>
+              <p class="text-carousel__item">Keep going.</p>
+              <p class="text-carousel__item">You're almost there.</p>
+              <p class="text-carousel__item">You've reached the end!</p>
+            </div>
+          </div>
+
+          <!-- Buttons -->
+          <div class="slider__btns">
+            <label class="slider__btn" for="meme-1">
+              <span class="slider__circle"></span>
+            </label>
+            <label class="slider__btn" for="meme-2">
+              <span class="slider__circle"></span>
+            </label>
+            <label class="slider__btn" for="meme-3">
+              <span class="slider__circle"></span>
+            </label>
+            <label class="slider__btn" for="meme-4">
+              <span class="slider__circle"></span>
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
